@@ -7,12 +7,10 @@ On linux, you can use de command: ```bash dd if=/dev/{card root} of=image.img bs
 Usually, or in my case the card root was /dev/sdb.
 
 Once the command has finish, it will take more or less depending on the size of the card, you have to compile the program in this repository (RecoverCF.c),
-on linux: gcc RecoverCF.c -o RecoverCF
+on linux: ```bash gcc RecoverCF.c -o RecoverCF```
 
 Then take the image created before and the compiled program into a folder to extract the pictures.
-```bash
-./RecoverCF image.img
-```
+```bash ./RecoverCF image.img```
 
 The program will automatically extract all the files that it find in the compress image.
 
